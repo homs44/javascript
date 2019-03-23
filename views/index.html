@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        
+    </style>
+<body>
+    <article id='id'>
+        <h1>This is title</h1>
+        <p>This is content</p>
+    </article>
+    <button id='bt'>
+        Click
+    </button>
+
+    <script>
+        var clicked = false;
+
+        var article = document.getElementById('id');
+        
+
+        document.getElementById('bt').onclick = function(){
+            if(clicked){
+                article.style.backgroundColor = 'white';
+                clicked = false;
+            }else{
+                article.style.backgroundColor = 'crimson';
+                clicked = true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
